@@ -55,7 +55,7 @@ class Director:
         self._terminal_service.write_text('')
         self.guess = self._terminal_service.read_text("Enter a letter: ")
         self.turn_number = self._game_manager.check_letter(self.guess)
-        self._terminal_service.write_text(self._game_manager.print)
+        self._terminal_service.write_text(self._game_manager._print)
         self._terminal_service.write_text('')
         
 
